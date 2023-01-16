@@ -1,7 +1,8 @@
 package co.com.choucair.certification.retotecnicoexito.util;
 
 import java.util.*;
-import java.util.stream.Collectors;
+
+import java.util.List;
 
 public class GlobalFunctions {
 
@@ -12,7 +13,7 @@ public class GlobalFunctions {
             arr[i] = i + 1;
         }
         Collections.shuffle(Arrays.asList(arr));
-        return List.of(arr);
+        return Arrays.asList(arr);
     }
 
     public final List listRandomQuantitiesOfProducts() {
@@ -20,7 +21,7 @@ public class GlobalFunctions {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 10 + 1);
         }
-        return List.of(arr);
+        return Arrays.asList(arr);
     }
 
     public final Double splitSpace(String price) {

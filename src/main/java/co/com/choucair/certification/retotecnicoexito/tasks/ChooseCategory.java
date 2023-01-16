@@ -15,7 +15,9 @@ public class ChooseCategory implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(ExitoHomePage.MENU_BUTTON));
-        actor.attemptsTo(MoveMouse.to(ExitoHomePage.TECHNOLOGY_CATEGORY));
+        actor.attemptsTo(Click.on(ExitoHomePage.TECHNOLOGY_CATEGORY));
+        actor.attemptsTo(Click.on(ExitoHomePage.SUBCATEGORIES_TECHNOLOGY));
+
 
     }
 }
