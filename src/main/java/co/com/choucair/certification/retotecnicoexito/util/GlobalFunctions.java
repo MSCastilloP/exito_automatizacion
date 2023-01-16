@@ -12,7 +12,6 @@ public class GlobalFunctions {
             arr[i] = i + 1;
         }
         Collections.shuffle(Arrays.asList(arr));
-//        System.out.println(Arrays.toString(arr));
         return List.of(arr);
     }
 

@@ -23,9 +23,6 @@ public class Answer implements Question<Boolean> {
     @Override
     public Boolean answeredBy(Actor actor) {
         boolean result;
-        choosenProducts.forEach(System.out::println);
-        productsShoppingCart.forEach(System.out::println);
-
         if (Objects.equals(choosenProducts, productsShoppingCart)) {
             result = true;
         } else {

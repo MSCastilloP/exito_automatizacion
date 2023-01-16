@@ -27,9 +27,6 @@ public class ChooseRandomQuantityProduct implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
 
-        listRandomQuantities.forEach(System.out::println);
-
-
         actor.attemptsTo(WaitUntil.the(ExitoMonitores.AGREGATE_PLUS_BUTTON_PRODUCT1, WebElementStateMatchers.isPresent()).forNoMoreThan(10).seconds(), Scroll.to(ExitoMonitores.AGREGATE_PLUS_BUTTON_PRODUCT1).andAlignToBottom());
         for (int i = 0; i < listRandomQuantities.get(0); i++) {
             actor.attemptsTo(WaitUntil.the(ExitoMonitores.AGREGATE_PLUS_BUTTON_PRODUCT1, WebElementStateMatchers.isClickable()).forNoMoreThan(10).seconds(), Click.on(ExitoMonitores.AGREGATE_PLUS_BUTTON_PRODUCT1.waitingForNoMoreThan(Duration.ofSeconds(3))));
