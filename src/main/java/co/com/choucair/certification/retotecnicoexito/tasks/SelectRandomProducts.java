@@ -20,7 +20,6 @@ public class SelectRandomProducts implements Task {
     public <T extends Actor> void performAs(T actor) {
 
         actor.attemptsTo(WaitUntil.the(ExitoMonitores.PRINCIPAL_DIV, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(), Scroll.to(ExitoMonitores.PRINCIPAL_DIV).andAlignToBottom());
-        actor.attemptsTo(WaitUntil.the(ExitoMonitores.PRICE_PRODUCT3, WebElementStateMatchers.isPresent()).forNoMoreThan(10).seconds());
         actor.attemptsTo(Scroll.to(ExitoMonitores.AGREGATE_BUTTON_PRODUCT1).andAlignToBottom(), WaitUntil.the(ExitoMonitores.AGREGATE_BUTTON_PRODUCT1, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(), Click.on(ExitoMonitores.AGREGATE_BUTTON_PRODUCT1.waitingForNoMoreThan(Duration.ofSeconds(3))));
         actor.attemptsTo(Scroll.to(ExitoMonitores.AGREGATE_BUTTON_PRODUCT2).andAlignToBottom(), WaitUntil.the(ExitoMonitores.AGREGATE_BUTTON_PRODUCT2, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(), Click.on(ExitoMonitores.AGREGATE_BUTTON_PRODUCT2.waitingForNoMoreThan(Duration.ofSeconds(3))));
         actor.attemptsTo(Scroll.to(ExitoMonitores.AGREGATE_BUTTON_PRODUCT3).andAlignToBottom(), WaitUntil.the(ExitoMonitores.AGREGATE_BUTTON_PRODUCT3, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(), Click.on(ExitoMonitores.AGREGATE_BUTTON_PRODUCT3.waitingForNoMoreThan(Duration.ofSeconds(3))));

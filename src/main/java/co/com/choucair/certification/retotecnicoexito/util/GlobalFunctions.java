@@ -7,11 +7,13 @@ import java.util.List;
 public class GlobalFunctions {
 
 
-    public final List listRandomNumberProducts() {
-        Integer[] arr = new Integer[15];
+    public final List listRandomNumberProducts(int taman) {
+        Integer[] arr = new Integer[taman];
+        int v[] = new int[10];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = i + 1;
         }
+
         Collections.shuffle(Arrays.asList(arr));
         return Arrays.asList(arr);
     }

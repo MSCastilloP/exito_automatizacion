@@ -5,8 +5,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/verifyShoppingCart.feature",
-        tags = "@stories",
+@CucumberOptions(features = "src/test/resources/features/verifyShop.feature",
+        tags = "@stories3",
         glue = "stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE)
 
